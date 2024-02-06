@@ -1,67 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="global.css">
+    <title>Inscription</title>
+
 </head>
 <body>
     <div class="contact-form">
-        <h2> Formulaire D'inscription</h2>
         <form action="" method="post">
             <fieldset>
-                <legend>Inscription</legend>
+                <legend><h2>Formulaire D'Inscription</h2></legend>
 
                 <div>
-                    <label for="name">Nom: </label>
-                    <input type="text" name="name" placeholder="Enter your name">    
+                    <label for="name"><h4>Nom</h4> </label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom">    
                 </div>
                 
                 <div>
-                    <label for="premon">Prénom: </label>
-                    <input type="text" name="prenom" placeholder="Enter your first name">  
+                    <label for="prenom"><h4>Prénom:</h4> </label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom">  
                 </div>
 
                 <div>
-                    <label for="matri">Matricule: </label>
-                    <input type="text" name="matri" placeholder="Enter your Matricule">    
+                    <label for="matri"><h4>Matricule:</h4> </label>
+                    <input type="text" id="matri" name="matri" placeholder="Entrez votre matricule">    
                 </div>
 
                 <div>
-                    <label for="filiere">Filière: </label>
-                    <select name="filiere">
-                        <option value="">choose your field</option>   
+                    <label for="filiere"><h4>Filière:</h4> </label>
+                    <select id="filiere" name="filiere">
+                        <option value="">Choisissez votre filière</option>   
                         <option value="GI" selected>Génie Informatique </option>   
-                        <option value="3ER">Eau Environnement et Energie Renouvélable</option>
+                        <option value="3ER">Eau Environnement et Energie Renouvelable</option>
                         <option value="CFA">Comptabilité Finance et Audit</option>
                     </select>
                 </div>
 
                 <div>
-                    <label for="date">Date de Naissance: </label>
-                    <input type="date" name="date" placeholder="Enter your birdth date">    
+                    <label for="date"><h4>Date de Naissance:</h4> </label>
+                    <input type="date" id="date" name="date">    
                 </div>
 
                 <div>
-                    <label for="sexe">SEXE: </label>
-                    <label>M</label><input type="radio" name="sexe" value="Masculin" />
-                    <label>F</label><input type="radio" name="sexe" value="Feminin" />
+                    <label for="sexe"><h4>SEXE: </h4></label>
+                    <label for="sexe-m">M</label><input type="radio" id="sexe-m" name="sexe" value="Masculin" />
+                    <label for="sexe-f">F</label><input type="radio" id="sexe-f" name="sexe" value="Feminin" />
                 </div>
-
 
                 <div>
-                    <label for="niveau">NIVEAU: </label>
-                    <input type="checkbox" name="niveau" value="DUT" checked><label>DUT</label>
-                    <input type="checkbox" name="niveau" value="Licence"><label>Licence</label>
-                    <input type="checkbox" name="niveau" value="Master"><label>Master</label>
-
+                    <label><h4>NIVEAU:</h4> </label>
+                    <input type="checkbox" id="niveau-dut" name="niveau" value="DUT" checked><label for="niveau-dut">DUT</label>
+                    <input type="checkbox" id="niveau-licence" name="niveau" value="Licence"><label for="niveau-licence">Licence</label>
+                    <input type="checkbox" id="niveau-master" name="niveau" value="Master"><label for="niveau-master">Master</label>
                 </div>
-                <button type="submit">Envoyer</button>
-            </form>
-    
 
-
-
+                <div class="button">
+                    <button type="submit">Envoyer</button>
+                </div>
             </fieldset>
+        </form>
     </div>
 </body>
 </html>
